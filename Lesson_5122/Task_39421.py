@@ -1,0 +1,5 @@
+a = int(input())
+b = int(input())
+c = int(input())
+d = float(input())
+print((2 * a * c + 2 * b * c) * d)

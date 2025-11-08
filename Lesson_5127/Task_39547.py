@@ -1,0 +1,5 @@
+word1 = input()
+word2 = input()
+word3 = input()
+word4 = word1 * (word1 < word2) + word2 * (word2 < word1)
+print(word4 * (word4 < word3) + word3 * (word3 < word4))

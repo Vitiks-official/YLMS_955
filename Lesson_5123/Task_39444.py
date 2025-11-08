@@ -1,0 +1,20 @@
+num = int(input())
+t = str(num // 1000)
+s = str(num // 100 % 10)
+d = str(num // 10 % 10)
+e = str(num % 10)
+minn = 100
+maxn = 0
+if t != "0":
+    minn = min(int(t + s), int(t + d), int(t + e), minn)
+    maxn = max(int(t + s), int(t + d), int(t + e), maxn)
+if s != "0":
+    minn = min(int(s + t), int(s + d), int(s + e), minn)
+    maxn = max(int(s + t), int(s + d), int(s + e), maxn)
+if d != "0":
+    minn = min(int(d + t), int(d + s), int(d + e), minn)
+    maxn = max(int(d + t), int(d + s), int(d + e), maxn)
+if e != "0":
+    minn = min(int(e + t), int(e + s), int(e + d), minn)
+    maxn = max(int(e + t), int(e + s), int(e + d), maxn)
+print(minn, maxn)
