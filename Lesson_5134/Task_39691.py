@@ -1,0 +1,1 @@
+print(" ".join([str(i) for i in range(int(input()) - 2, 12) if i % 2 == 0]))

@@ -1,0 +1,1 @@
+print(*[i[:i.index("#")] for i in input().split("/") if "#" in i])
